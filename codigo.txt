@@ -1,3 +1,4 @@
+// OLHA IF DO NOMES NOT, AND, OR, NAND, NOR, XOR, XNOR, PRA COLOCAR OS !=
 #include <stdio.h>
 void main()
 #define TAMNOME 50
@@ -18,7 +19,7 @@ void main()
         local1=resultados[entrada1];
         local2=resultados[entrada2];
         for (i=0;i<=TAMNOME;i++) {
-            //O do AND T¡ OK
+            //O do AND T√Å OK
             if(nome[i]=='a' && nome[i+1]=='n' && nome[i+2]=='d' && nome[i-1]!='n'){
                 if(local1+local2==ANDCERTO){
                     resultados[saida]=1;
@@ -27,7 +28,7 @@ void main()
                     resultados[saida]=0;
                 }
             }
-            //O do OR T¡ OK
+            //O do OR T√Å OK
             if(nome[i]=='o' && nome[i+1]=='r' && nome[i-1]!='x' && nome[i-1]!='n'){
                 if(local1+local2>=1){
                     resultados[saida]=1;
@@ -37,8 +38,8 @@ void main()
                     resultados[saida]=0;
                 }
             }
-            //A PARTI DAQUI … S” TEORIA KKK
-            // NAND T¡ "CERTO"
+            //A PARTI DAQUI √â S√ì TEORIA KKK
+            // NAND T√Å "CERTO"
             if(nome[i]=='n' && nome[i+1]=='a' && nome[i+2]=='n' && nome[i+3]=='d'){
                 if(local1+local2==NANDCERTO){
                     resultados[saida]=0;
