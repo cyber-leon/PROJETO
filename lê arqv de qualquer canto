@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+#include <iso646.h>
+#include <stdlib.h>
+
+int main()
+{
+    char endereco_do_arqv [100];
+
+
+    puts("Digite toda a entrada do arquivo .txt que deseja que seja lido");
+    scanf("%s", &endereco_do_arqv);
+
+    FILE* arqNome=fopen(endereco_do_arqv,"r");
+//------------------------------------------------------------------------------------
+  
+    
+    
+    
+    puts(endereco_do_arqv);
+
+
+    return 0;
+}
